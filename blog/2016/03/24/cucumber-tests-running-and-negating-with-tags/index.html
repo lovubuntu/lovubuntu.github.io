@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>About Me - My Blog</title>
+  <title>Cucumber Tests Running and Negating With Tags - My Blog</title>
   <meta name="author" content="Prabu">
 
   
-  <meta name="description" content="About Me Dec 12th, 2015 1:18 pm This is something I wish to see Dec 12th, 2015 1:18 pm Tweet Recent Posts Cucumber Tests Running and Negating With &hellip;">
+  <meta name="description" content="Instead of running the entire test suite Cucumber gives us the option to run only a particular set of tests using Tags. Example: cucumber --tags @ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://lovubuntu.github.io/new-page/">
+  <link rel="canonical" href="http://lovubuntu.github.io/blog/2016/03/24/cucumber-tests-running-and-negating-with-tags/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="My Blog" type="application/atom+xml">
@@ -64,44 +64,89 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">About Me</h1>
-    <p class="meta">
-
-
-
-
-<time class='entry-date' datetime='2015-12-12T13:18:00+01:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:18 pm</span></time></p>
-  </header>
-  
-  <p>This is something I wish to see</p>
-
-  
-    <footer>
+    
+      <h1 class="entry-title">Cucumber Tests Running and Negating With Tags</h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
 
-<time class='entry-date' datetime='2015-12-12T13:18:00+01:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:18 pm</span></time>
+<time class='entry-date' datetime='2016-03-24T00:15:23+01:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:15 am</span></time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Instead of running the entire test suite Cucumber gives us the option to run only a particular set of tests using <em>Tags</em>.<br/>
+    Example:
+        <code>cucumber --tags @unit</code></p>
+
+<p>If more than one tag should be executed then a comma separated list of values will do the trick.
+    Example:
+        <code>cucumber --tags @unit,@integration</code><br/>
+Here the comma separated annotations is considered as <code>Logical OR</code> condition</p>
+
+<p>But I was tasked to <em>NOT</em> to run a set of tests which have the specified tag (Because those tests should run separately).<br/>
+Cucumber is giving an option to do that as well. We can just use <code>cucumber --tags ~@donotrun</code></p>
+
+<p>Wait what if I don&rsquo;t want to run tests from more than one tag. If think like:
+<code>cucumber --tags ~donotrun,~neverrun</code> then you are wrong. As mentioned some lines before the comma between the tags represents logical OR.</p>
+
+<p>So it becomes <code>cucumber --tags (~donotrun || ~neverrun)</code> which practically runs all the tests without negating anything.</p>
+
+<blockquote><p>Solution:<br/>
+If the comma is logical OR then what we need is logical And. That is achieved by calling the &ndash;tags option again.
+    <code>cucumber --tags ~donotrun --tags ~neverrun</code></p></blockquote>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lovubuntu.github.io/new-page/index.html" data-via="" data-counturl="http://lovubuntu.github.io/new-page/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">Prabu</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2016-03-24T00:15:23+01:00'><span class='date'><span class='date-month'>Mar</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2016</span></span> <span class='time'>12:15 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/annotations/'>annotations</a>, <a class='category' href='/blog/categories/cucumber/'>cucumber</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://lovubuntu.github.io/blog/2016/03/24/cucumber-tests-running-and-negating-with-tags/" data-via="" data-counturl="http://lovubuntu.github.io/blog/2016/03/24/cucumber-tests-running-and-negating-with-tags/" >Tweet</a>
   
   
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/blog/2015/12/12/github-page-with-octopress/" title="Previous Post: Hello World">&laquo; Hello World</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

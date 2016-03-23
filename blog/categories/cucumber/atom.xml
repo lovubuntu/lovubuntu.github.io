@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Blog]]></title>
-  <link href="http://lovubuntu.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Cucumber | My Blog]]></title>
+  <link href="http://lovubuntu.github.io/blog/categories/cucumber/atom.xml" rel="self"/>
   <link href="http://lovubuntu.github.io/"/>
   <updated>2016-03-24T00:25:31+01:00</updated>
   <id>http://lovubuntu.github.io/</id>
@@ -38,15 +38,6 @@ Cucumber is giving an option to do that as well. We can just use <code>cucumber 
 <blockquote><p>Solution:<br/>
 If the comma is logical OR then what we need is logical And. That is achieved by calling the &ndash;tags option again.
     <code>cucumber --tags ~donotrun --tags ~neverrun</code></p></blockquote>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://lovubuntu.github.io/blog/2015/12/12/github-page-with-octopress/"/>
-    <updated>2015-12-12T08:44:49+01:00</updated>
-    <id>http://lovubuntu.github.io/blog/2015/12/12/github-page-with-octopress</id>
-    <content type="html"><![CDATA[<p>This is a hello world through Github using octopress</p>
 ]]></content>
   </entry>
   

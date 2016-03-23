@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://lovubuntu.github.io/blog/2016/03/24/cucumber-tests-running-and-negating-with-tags/</loc>
+    <lastmod>2016-03-24T00:15:23+01:00</lastmod>
+  </url>
+  <url>
     <loc>http://lovubuntu.github.io/blog/2015/12/12/github-page-with-octopress/</loc>
-    <lastmod>2015-12-12T13:14:49+05:30</lastmod>
+    <lastmod>2015-12-12T08:44:49+01:00</lastmod>
   </url>
   <url>
     <loc>http://lovubuntu.github.io/blog/archives/</loc>
@@ -12,5 +16,11 @@
   </url>
   <url>
     <loc>http://lovubuntu.github.io/new-page/</loc>
+  </url>
+  <url>
+    <loc>http://lovubuntu.github.io/blog/categories/cucumber/</loc>
+  </url>
+  <url>
+    <loc>http://lovubuntu.github.io/blog/categories/annotations/</loc>
   </url>
 </urlset>
