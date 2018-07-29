@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Prank&#39;s Яants</title>
+    <link>https://lovubuntu.github.io/posts/</link>
+    <description>Recent content in Posts on Prank&#39;s Яants</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 29 Jul 2018 07:28:31 +0530</lastBuildDate>
+    
+	<atom:link href="https://lovubuntu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://lovubuntu.github.io/posts/hello-world/</link>
+      <pubDate>Sun, 29 Jul 2018 07:28:31 +0530</pubDate>
+      
+      <guid>https://lovubuntu.github.io/posts/hello-world/</guid>
+      <description>Sample post using Hugo</description>
+    </item>
+    
+  </channel>
+</rss>
